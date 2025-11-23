@@ -1,13 +1,26 @@
-# 자동 물류 분류 시스템
+# 📦 자동 물류 분류 시스템
 
-실시간 자동 물류 분류 시스템입니다. 컨베이어 벨트를 따라 이동하는 물류의 QR 코드를 인식하여, 지정된 목적지로 자동으로 분류하는 작업을 수행합니다.
+주소지 기반의 자동 물류 분류 기능을 갖춘 스마트 컨베이어 시스템
 
-## 🛠️ 개발 환경
+## ⚙️ Features
+|기능|기능 상세|
+|------|------------|
+|주문 인식 기능|외부 시스템으로부터 주문 목록 수신|
+|객체 탐지 및 3D 위치 추정 기능|피킹 대상 물품을 정확히 인식하고 3차원 위치를 산출|
+|로봇 팔 경로 계획 및 피킹 기능|추정된 물체 위치를 기반으로 경로를 생성해 피킹 동작을 수행|
 
-*   **MCU**: STM32F103C8T6
-*   **IDE**: STM32CubeIDE
-*   **Frameworks**: STM32Cube HAL, FreeRTOS (CMSIS-OS v2)
-*   **Language**: C++
+## 💠 Environments
+### Hardware
+|||
+|------|------------|
+|STM32F103C8T6|<img width="100" height="100" alt="Image" src="https://github.com/user-attachments/assets/2ca5771b-33b1-4507-bf6d-6352d282d017" />|
+|TCRT5000 적외선 광센서|<img width="100" alt="Image" src="https://github.com/user-attachments/assets/be7bb56e-e997-4225-b133-a417bc57879a" />|
+|SG90 360도 디지털 서보모터|<img width="100" height="100" alt="Image" src="https://github.com/user-attachments/assets/602fb979-9817-48b3-ad29-6fe76cc2e452" />|
+|5V 스텝모터 + ULN2003 모터 드라이버 |<img width="100" alt="Image" src="https://github.com/user-attachments/assets/a2d52a8a-07ce-4158-a13c-161a236cdb2f" />|
+|DC 모터||
+### Software
+- STM32Cube HAL
+- FreeRTOS (CMSIS-OS v2)
 
 ## 💬 통신 프로토콜
 
